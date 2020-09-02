@@ -15,11 +15,11 @@ pipeline{
                 sh 'pwd'
             }
         }
-        stage("clear") {
-            steps {
-                sh 'rm -rf $(pwd/)'
-            }
-        }
+#        stage("clear") {
+#            steps {
+#                sh 'rm -rf $(pwd)/'
+#            }
+#        }
         stage("git clone") {
             steps {
                 sh "git clone git@github.com:Shebs1/test-ci-cd.git" 
