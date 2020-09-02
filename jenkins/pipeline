@@ -20,5 +20,11 @@ pipeline{
                 sh "git clone https://github.com/Shebs1/test-ci-cd" 
             }
         }
+        stage("clear docker") {
+            steps {
+                sh 'docker rm $(docker ps -aq)'
+                sh 'docker rmi $(docker images -q)'
+            }
+        }
     }
 }
