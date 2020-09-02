@@ -1,6 +1,6 @@
 #!grovy
 
-properties ([disbleConcurrenBuilds()])
+properties ([disableConcurrenBuilds()])
 
 pipline{
     agent{
