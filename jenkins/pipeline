@@ -17,7 +17,7 @@ pipeline{
         }
         stage("clear") {
             steps {
-                sh 'rm -rf $(pwd)'
+                sh 'rm -rf test_cicd'
             }
         }
     }
