@@ -20,5 +20,8 @@ pipeline{
                 sh 'rm -rf $(pwd/)'
             }
         }
+        stage("git clone") {
+            sh "git clone git@github.com:Shebs1/test-ci-cd.git" 
+        }
     }
 }
