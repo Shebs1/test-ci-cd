@@ -17,7 +17,7 @@ pipeline{
         }
         stage("clear") {
             steps {
-                sh 'rm -rf Test'
+                sh 'rm -rf $(pwd/)'
             }
         }
     }
