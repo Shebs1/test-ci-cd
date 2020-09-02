@@ -8,6 +8,7 @@ pipeline{
     options {
         timestamps()
     }
+    triggers { pollSCM('*****') }
     stages {
         stage("echo") {
             steps {
