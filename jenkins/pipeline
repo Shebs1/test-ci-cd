@@ -1,0 +1,19 @@
+#!grovy
+
+properties ([disbleConcurrenBuilds()])
+
+pipline{
+    agent{
+        lable 'master'
+    }
+    options {
+        timestamps()
+    }
+    stages {
+        stage("echo") {
+            steps {
+                echo "================start================"
+            }
+        }
+    }
+}
