@@ -6,9 +6,9 @@ import datetime
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return str(datetime.datetime.now())
+#@app.route('/')
+#def index():
+#    return str(datetime.datetime.now())
 
 @app.route('/api/v0.1/add', methods = ["POST"])
 def add():
