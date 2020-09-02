@@ -30,6 +30,7 @@ pipeline{
         }
         stage("clear docker") {
             steps {
+                sh 'docker stop $(docker ps)'
                 sh 'docker rm $(docker ps -qa)'
                 sh 'docker rmi $(docker images -q)'
             }
