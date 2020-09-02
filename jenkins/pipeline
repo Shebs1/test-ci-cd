@@ -11,7 +11,7 @@ pipeline{
     stages {
         stage("echo") {
             steps {
-                echo "================start================"
+                echo "================start now================"
             }
         }
     }
