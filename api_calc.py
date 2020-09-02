@@ -9,7 +9,7 @@ app = Flask(__name__)
 #@app.route('/')
 #def index():
 #    return str(datetime.datetime.now())
-
+# curl -X POST -H "Content-Type: application/json; charset=UTF-8" --data '{"a":"5","b":"2","oper":"/"}' "http://0.0.0.0:5000/api/v0.1/add"
 @app.route('/api/v0.1/add', methods = ["POST"])
 def add():
     if request.is_json:
