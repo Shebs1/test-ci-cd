@@ -1,6 +1,6 @@
 #!groovy
 
-properties ([disableConcurrenBuilds()])
+properties([disableConcurrentBuilds()])
 
 pipline{
     agent{
