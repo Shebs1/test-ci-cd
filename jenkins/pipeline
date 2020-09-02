@@ -15,6 +15,11 @@ pipeline{
                 sh 'pwd'
             }
         }
+        stages("cleab") {
+            steps {
+                sh "rm -rf test-ci-cd"
+            }
+        }
         stage("git clone") {
             steps {
                 sh "git clone https://github.com/Shebs1/test-ci-cd" 
