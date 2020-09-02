@@ -21,7 +21,9 @@ pipeline{
             }
         }
         stage("git clone") {
-            sh "git clone git@github.com:Shebs1/test-ci-cd.git" 
+            steps {
+                sh "git clone git@github.com:Shebs1/test-ci-cd.git" 
+            }
         }
     }
 }
