@@ -3,7 +3,7 @@
 
 pipeline{
     agent{
-        lable 'master'
+        label 'master'
     }
     options {
         timestamps()
