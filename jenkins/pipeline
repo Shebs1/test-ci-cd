@@ -31,7 +31,7 @@ pipeline{
                 sh 'docker rmi $(docker images -q)'
             }
         }
-        stage {
+        stage("docker min") {
             steps {
                 sh 'docker build -t calc_api test-ci-cd/ '
                 sh 'docker build run -d -p 5000:5000 calc_api'
