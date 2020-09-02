@@ -12,6 +12,7 @@ pipeline{
         stage("echo") {
             steps {
                 echo "================start now================"
+                sh 'pwd'
             }
         }
     }
